@@ -11,7 +11,7 @@ percentage = 0.5
 # A list! Commonly know as an unordered list, an array.. etc.
 # Lists are awesome.
 
-list = [100, 200, 225, 250, 300]
+list = [100, 200, 225]
 
 # A sweet taste of list comprehension
 #
@@ -23,7 +23,7 @@ list = [100, 200, 225, 250, 300]
 # index, and setting the new value to each index in the list. A tedious
 # task (using loops, if's, etc) made very simple with list comprehension.
 
-mySuperList = [list[i] * percentage for i in range(len(list))]
+mySuperList = [list[i] * percentage for i in range(1, len(list))]
 
 # The introductory
 print("How old is sam", sam_age)

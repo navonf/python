@@ -29,7 +29,7 @@ sauce2 = urllib.request.urlopen('http://www.investopedia.com/markets/stocks/momo
 # pass the HTML code to BeautifulSoup
 soup2 = bs.BeautifulSoup(sauce2, 'lxml')
 
-print("Current price of MOMO:    " + soup2.td.string)
+print("Current price of MOMO:   "     + soup2.td.string)
 
 # grab the sauce bois, and read it
 sauce3 = urllib.request.urlopen('http://www.investopedia.com/markets/stocks/AMZN/').read()
