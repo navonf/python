@@ -15,17 +15,20 @@ Run in the terminal:
 > Remember to run the commands in your project directory..
 > tip: ex: "cd Documents/Workspace/Git" to change directories
 
-``` python
-python3 current_stock_prices.py if while l = []
+``` bash
+python3 current_stock_prices.py
 ```
+
 
 > if "python3" does not work, try just "python"
 
 ## Web scraper using BeautifulSoup4 to scrape stock prices :rocket:
 ### file(s): current_stock_prices.py
 ### level: beginner - moderate
+> bs4 is needed to run since we are using
+
 This script will scrape the current stock prices, BABA, MOMO,
-and AMZN (my usuals). Please feel free to edit and add your own.
+and AMZN (my usuals). Please feel free to edit and add your own. A very basic non-modular approach to parse through HTML.
 
 Run in the terminal:
 ``` bash
@@ -36,3 +39,5 @@ python3 current_stock_prices.py
 ### file(s): hackathons.py
 ### level: moderate
 Very much in progress.
+
+## More projects in: code -> week whatever

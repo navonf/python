@@ -46,12 +46,3 @@ if totalMade > totalInvested:
     print("Current amount made:    ", str(t))
 else:
     print("lol")
-# flux = list(soup.find('td', attrs={'class': 'value-change'}).string)
-# net_change = ""
-# i = 0
-#
-# while flux[i] != ' ':
-#     net_change += flux[i]
-#     i += 1;
-# print("Yeserday's price of BABA:", baba + float(net_change))
-# print("Change since yesterday:  ", soup.find('td', attrs={'class': 'value-change'}).string)
