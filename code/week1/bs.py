@@ -5,12 +5,12 @@ from urllib.request import Request, urlopen
 kind = input("What type of beer? [ipa, stout, sour]: ")
 url = 'https://www.beeradvocate.com/search/?q='
 url = url + kind
-req = Request(url, headers={'User-Agent' : 'Mozilla/5.0'})
+req = Request(url)
 
 # Parse!!
-soup = urlopen(req).read()
-sauce = bs.BeautifulSoup(soup, "lxml")
-elements = sauce.find_all('b')
+sauce = urlopen(req).read()
+soup = bs.BeautifulSoup(sauce, "lxml")
+elements = soup.find_all('b')
 
 # Pretty
 del elements[:4]
