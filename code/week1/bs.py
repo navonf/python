@@ -5,7 +5,7 @@ from urllib.request import Request, urlopen
 kind = input("What type of beer? [ipa, stout, sour]: ")
 url = 'https://www.beeradvocate.com/search/?q='
 url = url + kind
-req = Request(url)
+req = Request(url, headers={"User-Agent" : "Mozilla/5.0"})
 
 # Parse!!
 sauce = urlopen(req).read()
